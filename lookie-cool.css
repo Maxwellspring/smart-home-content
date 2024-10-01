@@ -3,11 +3,50 @@
 body {
     background-color: #D3DADE;
     color: #002233;
+}
+
+nav a:link, nav a:visited {
+    text-decoration: none;
+    background-color: #95CAE5;
+    color: #002233;
+    font-family: arial;
+    transition-duration: 0.5s;
+    padding: 5px;
+    border-width: 10px;
+    border-color: #95CAE5;
+    border-style: solid;
+    border-radius: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    rotate: -90deg;
+    width: 100px;
+    justify-content: center;
+    translate: -20px;
 
 }
 
-nav {
-    background-color: #206080;
-    color: #002233;
-    
+nav a:hover, nav a:active {
+    text-decoration: underline;
+    color: #206080;
+    border-radius: 15px;
+}
+
+nav{
+    background-color: #294A5B;
+    border-radius: 5px;
+    width: 200px;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+nav li {
+    list-style: none;
+    height: 200px;
+}
+
+.Flex {
+    display: flex;
+}
+.Left-Nav {
+    position: fixed;
 }
