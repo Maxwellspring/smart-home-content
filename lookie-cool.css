@@ -1,9 +1,9 @@
 /* sheeeeesh */
 
 body {
-    background-color: #D3DADE;
-    color: #002233;
-}
+
+    margin: 0%;
+} 
 
 nav a:link, nav a:visited {
     text-decoration: none;
@@ -19,29 +19,33 @@ nav a:link, nav a:visited {
     display: inline-flex;
     flex-direction: row;
     rotate: -90deg;
-    width: 100px;
-    justify-content: center;
-    translate: -20px;
 
+    text-align: center;
+    height: 20%;
+    width: 60%;
 }
 
 nav a:hover, nav a:active {
     text-decoration: underline;
     color: #206080;
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 nav{
     background-color: #294A5B;
-    border-radius: 5px;
-    width: 200px;
+    height: 100%;
+    width: stretch;
     display: inline-flex;
-    justify-content: space-around;
+    align-content: center;
+    position: fixed;
 }
 
 nav li {
     list-style: none;
-    height: 200px;
+    height: 15em;
+    justify-content: space-around;
+    align-content: space-around;
+
 }
 
 .Flex {
@@ -49,4 +53,8 @@ nav li {
 }
 .Left-Nav {
     position: fixed;
+}
+
+#maincontent {
+    display: flex;
 }
