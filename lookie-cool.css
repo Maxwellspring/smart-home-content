@@ -1,9 +1,8 @@
 /* sheeeeesh */
 
-body {
-
-    margin: 0%;
-} 
+* {
+    box-sizing: border-box;
+}
 
 nav a:link, nav a:visited {
     text-decoration: none;
@@ -11,18 +10,18 @@ nav a:link, nav a:visited {
     color: #002233;
     font-family: arial;
     transition-duration: 0.5s;
-    padding: 5px;
-    border-width: 10px;
-    border-color: #95CAE5;
-    border-style: solid;
+    padding: 1rem;
     border-radius: 10px;
-    display: inline-flex;
-    flex-direction: row;
     rotate: -90deg;
     text-align: center;
+    width: 150px;
+    margin: auto;
+    min-height: 70px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    height: 20%;
-    width: 70%;
 }
 
 nav a:hover, nav a:active {
@@ -31,26 +30,141 @@ nav a:hover, nav a:active {
     border-radius: 25px;
 }
 
-nav {
+nav#Left-Nav {
+    margin: 0%;
     background-color: #294A5B;
-    width: fit-content;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
     position: fixed;
-    height: 100%;
+    height: 100vh;
+    width: 175px;
+    /* width: fit-content; */
+    /* flex-flow: column nowrap; */
 }
 
-nav li {
-    list-style: none;
-    height: 15em;
-    justify-content: space-around;
-    align-content: space-around;
+p#light-block {
+    background-color: #206080;
+    color: #00000000;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
 }
 
 .Flex {
     display: flex;
 }
 
+section#maincontent {
+    margin: 0%;
+    margin-left: 175px;
+    background-color: #D3DADE;
+}
 
-.maincontent {
+body {
+    margin: 0%;
     display: flex;
 }
+
+footer {
+    background-color: #206080;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    margin: 0%;
+    color:#95CAE5;
+    font-family: Arial;
+    border-color: #206080;
+    border-width: 5px;
+    border-style: solid;
+    min-width: 860px;
+
+}
+
+section#links { /* holds the boxes of links */
+    display:inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section#footercontent { /* holds the actual links */
+    width: fit-content;
+    display: block;
+    background-color: antiquewhite;
+    margin: 5px;
+}
+
+section#footercontent > h4 {
+    color: #206080;
+}
+
+button {
+    width: 160px;
+    height: 50px;
+    background-color: #95CAE5;
+    border-color: #00000000;
+    border-radius: 0px 20px 20px 0px;
+    border-width: 3px;
+    color: #294A5B;
+}
+
+button:active {
+    background-color: #294A5B;
+    color: #95CAE5;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+input {
+    border-color: #00000000;
+    height: 50px;
+    border-radius: 20px 0px 0px 20px;
+    border-width: 3px;
+    
+}
+
+input:hover {
+    text-decoration: underline;
+}
+
+/* nav#Left-Nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+nav#Left-Nav li {
+    list-style: none;
+    height: 15em;
+    justify-content: space-around;
+    align-content: space-around;
+} */
+
+/* nav#Left-Nav > a {
+
+} */
+
+/* h5 {    THIS IS FOR THE FUNNY */
+    /* flex: auto;
+    background-color: red;
+    border: red;
+    border-radius: 5px;
+    border-style: dotted;
+    color: green;
+    font-size: large;
+    font-family: arial;
+    transition-duration: 1s;
+    text-align: center;
+}
+
+h5:active {
+    color: blue;
+    translate: 1000px;
+    rotate: 36000deg;
+    transition-duration: 1s;
+    transition-property: all;
+
+} */
