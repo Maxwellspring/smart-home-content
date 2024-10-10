@@ -29,7 +29,6 @@ nav a:link, nav a:visited {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 nav a:hover, nav a:active {
@@ -84,24 +83,29 @@ footer {
 
 }
 
-section#links { /* holds the boxes of links */
-    display:inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+div#links { /* holds the boxes of links */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    padding: 20px;
+    margin: 0 auto; 
+    max-width: 1200px;
+
 }
 
 section.footercontent { /* holds the actual links */
-    width: fit-content;
-    display: block;
-    background-color: antiquewhite;
-    margin: 5px;
+    width: 480px;
+    height: auto;
+    padding: 20px;
+    margin: 5px; 
+    background-color:#294A5B;
+    border-radius: 25px;
+    min-width: 460px;
 }
 
-section.footercontent > h4 {
+/* section.footercontent > h4 {
     color: #206080;
-}
+} */
 
 button {
     width: 160px;
@@ -127,7 +131,6 @@ input {
     height: 50px;
     border-radius: 20px 0px 0px 20px;
     border-width: 3px;
-    
 }
 
 input:hover {
@@ -163,42 +166,12 @@ p:not(p#light-block) {
 h1, h2, h3, h4, h5, h6 {
     margin-left: 10px;
 }
-/* nav#Left-Nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-flow: column nowrap;
+
+.no-number {
+    /* list-style-type: none; */
+    /* list-style-image: url(Images/li.png) */
 }
 
-nav#Left-Nav li {
-    list-style: none;
-    height: 15em;
-    justify-content: space-around;
-    align-content: space-around;
-} */
-
-/* nav#Left-Nav > a {
-
-} */
-
-/* h5 {    THIS IS FOR THE FUNNY */
-    /* flex: auto;
-    background-color: red;
-    border: red;
-    border-radius: 5px;
-    border-style: dotted;
-    color: green;
-    font-size: large;
-    font-family: arial;
-    transition-duration: 1s;
+footer > h4 {
     text-align: center;
 }
-
-h5:active {
-    color: blue;
-    translate: 1000px;
-    rotate: 36000deg;
-    transition-duration: 1s;
-    transition-property: all;
-
-} */
