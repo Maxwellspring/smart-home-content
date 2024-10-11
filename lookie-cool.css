@@ -100,7 +100,8 @@ section.footercontent { /* holds the actual links */
     margin: 5px; 
     background-color:#294A5B;
     border-radius: 25px;
-    min-width: 460px;
+    min-width: 400px;
+    text-align: left;
 }
 
 /* section.footercontent > h4 {
@@ -172,6 +173,20 @@ h1, h2, h3, h4, h5, h6 {
     /* list-style-image: url(Images/li.png) */
 }
 
-footer > h4 {
+footer > h2 {
     text-align: center;
+    font-style: italic;
+}
+
+.footercontent a:visited, a:link {
+    color:#95CAE5;
+    text-decoration: none;
+    transition-duration: .1s;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footercontent a:hover, a:active {
+    color: #D3DADE;
+    text-decoration: underline;
 }
