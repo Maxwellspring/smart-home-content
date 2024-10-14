@@ -20,7 +20,7 @@ nav a:link, nav a:visited {
     transition-duration: 0.5s;
     padding: 1rem;
     border-radius: 10px;
-    rotate: -90deg;
+    transform: rotate(-90deg);
     text-align: center;
     width: 150px;
     margin: auto;
@@ -76,7 +76,6 @@ footer {
     margin: 0%;
     color:#95CAE5;
     font-family: Arial;
-    border-color: #206080;
     border-width: 5px;
     border-style: solid;
     min-width: 860px;
@@ -103,10 +102,6 @@ section.footercontent { /* holds the actual links */
     min-width: 400px;
     text-align: left;
 }
-
-/* section.footercontent > h4 {
-    color: #206080;
-} */
 
 button {
     width: 160px;
@@ -138,7 +133,7 @@ input:hover {
     text-decoration: underline;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 20px; 
     border-radius: 10px;
 }
@@ -158,7 +153,11 @@ input:hover {
 
 ::-webkit-scrollbar-corner {
     background-color: #206080;
-}
+} */
+
+/* im not happy about commenting out this cool scroll bar >:[ */
+
+
 
 p:not(p#light-block) {
     margin-left: 10px;
@@ -168,10 +167,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 10px;
 }
 
-.no-number {
-    /* list-style-type: none; */
-    /* list-style-image: url(Images/li.png) */
-}
 
 footer > h2 {
     text-align: center;
