@@ -196,6 +196,21 @@ footer > h2 {
 }
 
 #Images {
-    align-self: flex-end;
+    align-self: center;
+    width: 500px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+
+#Images img {
+    margin-bottom: 10px;
     width: 500px;
 }
+
+section#main-content {
+    width: 820px;
+}
+
